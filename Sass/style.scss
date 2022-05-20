@@ -58,23 +58,31 @@ html {
     }
     &__input {
         flex-basis: 60%;
-        height: 50%;
+        height: 10%;
         max-height: 60px;
         min-height: 50px;
-        margin-right: 2vh;
+        margin-right: 1vh;
         padding: 0 10px;
         font-size: 1.4rem;
-        &:focus {
-            box-shadow: 0 0 2px 1px $main-color;
-            font-weight: bold;
-        }
+        
     }
+    &__select {
+        flex-basis: 10%;
+        height: 10%;
+        max-height: 60px;
+        min-height: 50px;
+        margin-right: 1vh;
+        padding: 0 10px;
+        font-size: 1.4rem;
+        
+    }
+
     &__btn {
-        height: 50%;
+        height: 10%;
         max-height: 60px;
         min-height: 50px;
         font-size: 1.4rem;
-        padding: 0 10px;
+        padding: 0 3px;
         border: 2px solid $main-color;
         background-color: #fff;
         letter-spacing: 2px;
@@ -107,61 +115,247 @@ html {
 
 ul > li {
     width: 100px;
-}
-
-
-.menu {
+  }
+  
+  .menu {
     flex-basis: 100%;
     height: 90px;
     margin-top: 10px;
-    background-color: rgb(44, 30, 21);
-    font-family: $second-font-family;
-    padding: 15px 50px 15px 80px;
-    &__list {
-        display: flex;
-        list-style: none;
-    }
-    &__item {
-        margin: 0 20px;
-        font-size: 20px;
-        text-align: center;
-        
+    font-family: "Saira", sans-serif;
+    padding: 10px;
+    color: pink;
+    background-color: rgb(54, 38, 21);
+  }
+  .menu__list {
+    display: flex;
+    list-style: none;
+}
+.menu__item {
+    margin: 10px 45px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .menu__link {
+    display: block;
+    flex-wrap: wrap;
+    color: rgb(244, 238, 232);
+    text-decoration: none;
+  }
+  .menu a {
+    text-decoration: none;
+  }
+  .menu__item-subpage {
+    padding-top: 9px;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .menu__item-subpage-item {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(81, 60, 54);
+    border: 1px solid yellow;
+  }
+  .menu__item-subpage-item a {
+    color: rgb(255, 255, 255);
+  }
+  
+  ul > li > ul {
+    display: none;
+  }
+  
+  ul > li:hover > ul {
+    display: block;
+  }/*# sourceMappingURL=style.css.map */
 
-     }
-    &__link {
+  .article {
+    padding: 30px 50px;
+    color: rgb(42, 25, 31);
+    text-align: center;
+    &--small {
+        padding: 20px 50px;
+    }
+
+    &__image {
         display: block;
-        flex-wrap: wrap;
-        color: rgb(244, 238, 232);
-        text-decoration: none;
+        width: 100%;
+        height: 50%;
+
+        &:hover {
+            // -webkit-filter: brightness(100%);
+            filter: drop-shadow(16px 16px 10px black);
+            cursor: pointer;
+            transition: all 0.5s ;
+        }
     }
 
-    a {
-        text-decoration: none;
+    &__title {
+        font-family: Arial;
+        font-size: 3rem;
+        padding: 35px 0 15px;
+        .article--small & {
+            padding: 10px;
+            font-size: 1.8rem;
+            background-color: pink;
+        }
     }
 
-    &__item-subpage {
-        list-style: none;
-        flex-wrap: wrap;
+    &__introduction {
+        line-height: 1.6;
+        font-size: 1.6rem;
     }
-
-    &__item-subpage-item {
-        width: 100px;
-        height: 40px;
+    
+    &__btn {
+        display: block;
+        margin: 10px auto;
+        width: 50%;
+        min-width: 200px;
+        font-size: 1.8rem;
+        border: 2px solid black;
+        padding: 6px 12px;
         background-color: $main-color;
-        border: 1px solid yellow;
-        
-        a {
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            background-color: #fff;
+        }
+    }
 
-            color: rgb(255, 255, 255);
+}
+
+.main-articles {
+    flex-basis: 100%;
+    background-color: rgb(152, 131, 131);
+    display: flex;
+    flex-wrap: wrap;
+    &__intro {
+        flex-basis: 100%;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 60px 0 30px;
+        text-align: center;
+        font-size: 4.4rem;
+        letter-spacing: 2px;
+    }
+    .article {
+        flex-basis: 50%;
+        @media (max-width: 799px) {
+            flex-basis: 90%;
         }
     }
 }
 
-ul > li > ul {
-    display: none;
+.article-list {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__article {
+        flex-basis: 30%;
+        flex-grow: 1;
+        @media(max-width: 1023px) {
+            flex-basis: 45%;
+        }
+        @media(max-width: 799px) {
+            flex-basis: 95%;
+        }
+    }
 }
 
-ul >li:hover > ul {
-    display: block;
+.mini-projects-title {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    
+    &__intro {
+        text-align: center;
+        font-family: $font-family;
+        letter-spacing: 3px;
+        padding: 20px 0;
+        font-size:40px;
+        flex-basis: 25%;
+        flex-grow: 1;
+        @media(max-width: 1023px) {
+            flex-basis: 45%;
+        }
+        @media(max-width: 799px) {
+            flex-basis: 95%;
+        }
+    }
+}
+
+.project {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: black;
+    text-align: center;
+    // flex-basis: 100%;
+    // display: flex;
+    // flex-wrap: wrap;
+    // padding: 30px;
+    
+    &__article {
+        flex-basis: 50%;
+        flex-grow: 1;
+        padding: 30px 50px;
+        @media(max-width: 1023px) {
+            flex-basis: 45%;
+        }
+        @media(max-width: 799px) {
+            flex-basis: 95%;
+        }
+        
+    }
+    &__image {
+        display: block;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+
+        &:hover {
+            filter: blur(5px);
+            cursor: pointer;
+            transition: all 0.5s ;
+        }
+    }
+}
+
+
+
+.footer {
+    flex-basis: 100%;
+    background-color: rgb(126, 97, 58);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+
+    .sm-links {
+        flex-basis: 30%;
+    }
+}
+
+.sm-links {
+    font-family: $second-font-family;
+    padding: 10px;
+
+    &--darken {
+        background-color: orange;
+    }
+
+    &__title {
+        margin: 20px 0 20px;
+        font-size: 2.4rem;
+        font-weight: 400;
+        color:rgb(0, 0, 0);
+    }
+
+    &__item {
+        font-size: 1.8rem;
+        color:rgb(0, 0, 0);
+    }
 }
 
