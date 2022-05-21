@@ -15,6 +15,9 @@ html {
     background-attachment: fixed;
 }
 
+a {
+    color: pink;
+}
 
 .wrapper {
     //kontener
@@ -37,7 +40,7 @@ html {
     // height: 80px;
     //background-color: rgb(139, 181, 226);
     //tutaj zmieniamy wielkośc logo czyli 100% konteneru rodzica
-    
+
     &__image {
         display: block;
         width: 100%;
@@ -56,6 +59,7 @@ html {
         flex-basis: 100%;
         order: -1;
     }
+
     &__input {
         flex-basis: 60%;
         height: 10%;
@@ -64,8 +68,9 @@ html {
         margin-right: 1vh;
         padding: 0 10px;
         font-size: 1.4rem;
-        
+
     }
+
     &__select {
         flex-basis: 10%;
         height: 10%;
@@ -74,7 +79,7 @@ html {
         margin-right: 1vh;
         padding: 0 10px;
         font-size: 1.4rem;
-        
+
     }
 
     &__btn {
@@ -88,6 +93,7 @@ html {
         letter-spacing: 2px;
         cursor: pointer;
         transition: 0.4s;
+
         &:hover {
             background-color: #000;
             color: white;
@@ -99,78 +105,91 @@ html {
     display: flex;
     padding: 0 30px 0 20px;
     align-items: center;
+
     @media(max-width: 799px) {
         flex-grow: 1;
         justify-content: flex-end;
     }
+
     &__icon-link {
         margin: 0 5px;
         font-size: 5rem;
         color: #555;
+
         &:hover {
             color: black;
         }
     }
 }
 
-ul > li {
+ul>li {
     width: 100px;
-  }
-  
-  .menu {
+}
+
+.menu {
     flex-basis: 100%;
     height: 90px;
-    margin-top: 10px;
+    margin: auto;
     font-family: "Saira", sans-serif;
-    padding: 10px;
+    padding: 15px;
     color: pink;
     background-color: rgb(54, 38, 21);
-  }
-  .menu__list {
+}
+
+.menu__list {
     display: flex;
     list-style: none;
 }
+
 .menu__item {
-    margin: 10px 45px;
+    margin: auto 45px;
     font-size: 20px;
     text-align: center;
-  }
-  .menu__link {
+}
+
+.menu__link {
     display: block;
     flex-wrap: wrap;
     color: rgb(244, 238, 232);
     text-decoration: none;
-  }
-  .menu a {
+}
+
+.menu a {
     text-decoration: none;
-  }
-  .menu__item-subpage {
+}
+
+.menu__item-subpage {
     padding-top: 9px;
     list-style: none;
     flex-wrap: wrap;
-  }
-  .menu__item-subpage-item {
+}
+
+.menu__item-subpage-item {
     width: 100px;
     height: 40px;
     background-color: rgb(81, 60, 54);
     border: 1px solid yellow;
-  }
-  .menu__item-subpage-item a {
-    color: rgb(255, 255, 255);
-  }
-  
-  ul > li > ul {
-    display: none;
-  }
-  
-  ul > li:hover > ul {
-    display: block;
-  }/*# sourceMappingURL=style.css.map */
+}
 
-  .article {
+.menu__item-subpage-item a {
+    color: rgb(255, 255, 255);
+}
+
+ul>li>ul {
+    display: none;
+}
+
+ul>li:hover>ul {
+    display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.article {
     padding: 30px 50px;
     color: rgb(42, 25, 31);
     text-align: center;
+
     &--small {
         padding: 20px 50px;
     }
@@ -184,7 +203,7 @@ ul > li {
             // -webkit-filter: brightness(100%);
             filter: drop-shadow(16px 16px 10px black);
             cursor: pointer;
-            transition: all 0.5s ;
+            transition: all 0.5s;
         }
     }
 
@@ -192,6 +211,7 @@ ul > li {
         font-family: Arial;
         font-size: 3rem;
         padding: 35px 0 15px;
+
         .article--small & {
             padding: 10px;
             font-size: 1.8rem;
@@ -203,7 +223,7 @@ ul > li {
         line-height: 1.6;
         font-size: 1.6rem;
     }
-    
+
     &__btn {
         display: block;
         margin: 10px auto;
@@ -212,9 +232,10 @@ ul > li {
         font-size: 1.8rem;
         border: 2px solid black;
         padding: 6px 12px;
-        background-color: $main-color;
+        background-color: rgb(238, 238, 197);
         color: #000;
         text-decoration: none;
+
         &:hover {
             background-color: #fff;
         }
@@ -227,6 +248,7 @@ ul > li {
     background-color: rgb(152, 131, 131);
     display: flex;
     flex-wrap: wrap;
+
     &__intro {
         flex-basis: 100%;
         padding: 10px 0;
@@ -236,8 +258,10 @@ ul > li {
         font-size: 4.4rem;
         letter-spacing: 2px;
     }
+
     .article {
         flex-basis: 50%;
+
         @media (max-width: 799px) {
             flex-basis: 90%;
         }
@@ -249,12 +273,15 @@ ul > li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
     &__article {
         flex-basis: 30%;
         flex-grow: 1;
+
         @media(max-width: 1023px) {
             flex-basis: 45%;
         }
+
         @media(max-width: 799px) {
             flex-basis: 95%;
         }
@@ -268,18 +295,20 @@ ul > li {
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.2);
 
-    
+
     &__intro {
         text-align: center;
         font-family: $font-family;
         letter-spacing: 3px;
         padding: 20px 0;
-        font-size:40px;
+        font-size: 40px;
         flex-basis: 25%;
         flex-grow: 1;
+
         @media(max-width: 1023px) {
             flex-basis: 45%;
         }
+
         @media(max-width: 799px) {
             flex-basis: 95%;
         }
@@ -297,19 +326,22 @@ ul > li {
     // display: flex;
     // flex-wrap: wrap;
     // padding: 30px;
-    
+
     &__article {
         flex-basis: 50%;
         flex-grow: 1;
         padding: 30px 50px;
+
         @media(max-width: 1023px) {
             flex-basis: 45%;
         }
+
         @media(max-width: 799px) {
             flex-basis: 95%;
         }
-        
+
     }
+
     &__image {
         display: block;
         width: 80%;
@@ -319,7 +351,7 @@ ul > li {
         &:hover {
             filter: blur(5px);
             cursor: pointer;
-            transition: all 0.5s ;
+            transition: all 0.5s;
         }
     }
 }
@@ -350,12 +382,12 @@ ul > li {
         margin: 20px 0 20px;
         font-size: 2.4rem;
         font-weight: 400;
-        color:rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
     }
 
     &__item {
         font-size: 1.8rem;
-        color:rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
     }
 }
 

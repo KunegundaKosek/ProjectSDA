@@ -19,42 +19,79 @@
         </div>
 
         <form action="/" class="search">
-            <input type="text" class="search__input" placeholder="Wpisz">
+            <input type="text" class="search__input" placeholder="czego szukasz?">
+            
+            <select class="search__select" name="" id="">
+                <option selected value="">Wszystkie kategorie</option>
+                <optgroup label="Kategorie">
+                    <option value="">Dom i ogród</option>
+                    <option value="">Dziecko</option>
+                    <option value="">Elektronika</option>
+                    <option value="">Firma i usługi</option>
+                    <option value="">Kolekcje i sztuka</option>
+                    <option value="">Kultura i rozrywka</option>
+                    <option value="">Moda</option>
+                    <option value="">Motoryzacja</option>
+                    <option value="">Nieruchomości</option>
+                    <option value="">Sport i turystyka</option>
+                    <option value="">Supermarket</option>
+                    <option value="">Uroda</option>
+                    <option value="">Zdrowie</option>
+                </optgroup>
+
+                <optgroup label="Inne opcje">
+                    <option value="">Cele charytatywne</option>
+                    <option value="">Organizacje charytatywne</option>
+                    <option value="">Sprzedawcy</option>
+                    <option value="">Zakończone</option>
+
+                </optgroup>
+
+                
+                
+
+            </select>
+
             <button class="search__btn">Wyszukaj</button>
+            
+
         </form>
 
         <div class="settings">
-            <a class="settings__icon-link" href="">
+            <a class="settings__icon-link" href="login.html">
                 <i class="fa-solid fa-user"></i>
             </a>
         </div>
 
         <nav class="menu">
+
             <ul class="menu__list">
-                <li class="menu__item">
-                    <a href="index.html" class="menu__link">Home</a></li>
-                <li class="menu__item">
-                    <a href="categories.html" class="menu__link">Kategorie</a>
-                </li>
 
-                <li class="menu__item">
-                    <a href="auctions.html" class="menu__link">Aukcje</a>
-                </li>
+                <a href="index.html">
+                    <li class="menu__item">Home</li>
+                </a>
 
-                <li class="menu__item">
-                    <a href="auctionsAndPurchases.html" class="menu__link">Licytacje i zakupy</a>
-                </li>
+                <a href="auctions.html">
+                    <li class="menu__item">Aukcje</li>
+                </a>
 
-                <li class="menu__item">
-                    <a href="transactionEvaluation.html" class="menu__link">Ocena transakcji</a>
-                </li>
+                <a href="auctionsAndPurchases.html">
+                    <li class="menu__item">Licytacje i zakupy</li>
+                </a>
 
-                <li class="menu__item">
-                    <a href="observationOfTheAuction.html" class="menu__link">Obserwacja aukcji</a>
-                </li>
+                <a href="transactionEvaluation.html">
+                    <li class="menu__item">Ocena Transakcji</li>
+                </a>
+
+                <a href="observationOfTheAuction.html">
+                    <li class="menu__item">Obserwacja aukcji</li>
+                </a>
+                    
+                
+
+
             </ul>
         </nav>
-    </div>
 
 
 
