@@ -71,21 +71,23 @@
                     <li class="menu__item">Home</li>
                 </a>
 
-                <li class="menu__item">Aukcje
+                <a href="auctions.html">
+                    <li class="menu__item">Aukcje</li>
+                </a>
+
+                <a href="auctionsAndPurchases.html">
+                    <li class="menu__item">Licytacje i zakupy</li>
+                </a>
+
+                <a href="transactionEvaluation.html">
+                    <li class="menu__item">Ocena Transakcji</li>
+                </a>
+
+                <a href="observationOfTheAuction.html">
+                    <li class="menu__item">Obserwacja aukcji</li>
+                </a>
+                    
                 
-                </li>
-
-                <li class="menu__item">Licytacje i zakupy
-                    
-                </li>
-
-                <li class="menu__item">Ocena Transakcji
-                    
-                </li>
-
-                <li class="menu__item">Obserwacja aukcji
-                    
-                </li>
 
 
             </ul>
@@ -102,11 +104,31 @@
                 <input class="login__input" type="password" name="password" value="" placeholder="Podaj hasło">
                 <br><br>
 
-                <input class="login__btn" type="submit" value="Zaloguj">
+                <input id="zalogowany" class="login__btn" type="submit" value="Zaloguj">
+            </form>
+        </section>
+
+        <h1 class="title">- - - - - - - - - - - - - - - Zarejestruj się- - - - - - - - - - - - - - -</h1>
+
+        <section class="login">
+            <form class="login__form" action="">
+                Nazwa użytkownika
+                <input class="login__input" type="email" name="email" value="" placeholder="Podaj nazwe użytkownika">
+                <br><br>
+                Login <br>
+                <input class="login__input" type="email" name="email" value="" placeholder="Podaj email">
+                <br><br>
+                Hasło <br>
+                <input class="login__input" type="password" name="password" value="" placeholder="Podaj hasło">
+                <br><br>
+
+                <button id="zarejestrowany" class="login__btn" type="submit">Zarejestruj</buttonid>
             </form>
         </section>
 </div>
 
+
+<script src="logowanie.js"></script>
     
 </body>
 </html>

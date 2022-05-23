@@ -20,6 +20,10 @@ html {
   background-attachment: fixed;
 }
 
+a {
+  color: pink;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;

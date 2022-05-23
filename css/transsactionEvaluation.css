@@ -372,11 +372,15 @@ a {
   margin: 40px;
   width: 80%;
   height: 80px;
+  border: 2px solid black;
+  padding: 5px;
 }
 .form__input-plusminus {
   margin: 10px;
   width: 37%;
   height: 50px;
+  border: 2px solid black;
+  padding: 5px;
 }
 .form__input-file {
   border: 2px solid green;
@@ -384,18 +388,11 @@ a {
   height: 40px;
   text-align: center;
 }
-
-.circle1, .circle2, .circle3, .circle4, .circle5 {
-  flex-basis: 100%;
-  display: flex;
-  width: 50px;
-  height: 50px;
-  margin: 20px 10px;
-  border: 2px solid black;
-  float: left;
-}
-.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover {
-  background-color: yellow;
+.form__submit {
+  border: 3px solid green;
+  background-color: rgb(175, 165, 165);
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .description {
