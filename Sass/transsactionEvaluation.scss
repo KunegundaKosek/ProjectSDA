@@ -11,6 +11,12 @@ a {
     text-align: center;
     padding: 30px;  
 
+    &:hover {
+        color: orange;
+        transition: .5s;
+        cursor: pointer;
+    }
+
     &__input-review {
         margin: 40px;
         width: 80%;
@@ -39,6 +45,7 @@ a {
         background-color: rgb(175, 165, 165);
         padding: 10px 20px;
         cursor: pointer;
+        margin-bottom: 500px;
     }
 }
 

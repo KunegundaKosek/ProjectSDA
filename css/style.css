@@ -93,6 +93,11 @@ a {
   padding: 0 30px 0 20px;
   align-items: center;
 }
+.settings:hover {
+  color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+}
 @media (max-width: 799px) {
   .settings {
     flex-grow: 1;
@@ -100,9 +105,10 @@ a {
   }
 }
 .settings__icon-link {
-  margin: 0 5px;
+  margin: 10px 5px;
   font-size: 5rem;
   color: #555;
+  margin-left: 30px;
 }
 .settings__icon-link:hover {
   color: black;
@@ -170,6 +176,24 @@ ul > li:hover > ul {
 }
 
 /*# sourceMappingURL=style.css.map */
+.cursor {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.cursor.active {
+  opacity: 1;
+}
+
+.cursorr {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.cursorr.active {
+  opacity: 1;
+}
+
 .article {
   padding: 30px 50px;
   color: rgb(42, 25, 31);

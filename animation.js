@@ -1,7 +1,7 @@
 
 const spnText = document.querySelector('.text')
 const spnCursor = document.querySelector('.cursor')
-const txt = 'Dodaj ocenę produktu'
+const txt = 'Polecamy!'
 
 let indexText = 0
 

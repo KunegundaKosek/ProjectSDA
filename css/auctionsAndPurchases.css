@@ -97,6 +97,11 @@ a {
   padding: 0 30px 0 20px;
   align-items: center;
 }
+.settings:hover {
+  color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+}
 @media (max-width: 799px) {
   .settings {
     flex-grow: 1;
@@ -104,9 +109,10 @@ a {
   }
 }
 .settings__icon-link {
-  margin: 0 5px;
+  margin: 10px 5px;
   font-size: 5rem;
   color: #555;
+  margin-left: 30px;
 }
 .settings__icon-link:hover {
   color: black;
@@ -174,6 +180,24 @@ ul > li:hover > ul {
 }
 
 /*# sourceMappingURL=style.css.map */
+.cursor {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.cursor.active {
+  opacity: 1;
+}
+
+.cursorr {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.cursorr.active {
+  opacity: 1;
+}
+
 .article {
   padding: 30px 50px;
   color: rgb(42, 25, 31);
@@ -360,4 +384,62 @@ ul > li:hover > ul {
 
 a {
   color: pink;
+}
+
+.footer {
+  margin-top: 500px;
+}
+
+.settings:hover {
+  color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.licytacja_sprzedaz {
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  padding: 20px 50px;
+  background-color: rgb(239, 71, 99);
+  font-family: "Macondo", cursive;
+  font-size: 30px;
+}
+.licytacja_sprzedaz:hover {
+  background-color: rgb(4, 4, 89);
+  transition: all 2s;
+  color: white;
+  border: 5px solid rgb(174, 155, 155);
+}
+
+.inputt {
+  text-align: justify;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  border: 3px solid rgb(31, 6, 99);
+  width: 50%;
+  height: 150px;
+}
+
+.cena {
+  text-align: justify;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  border: 3px solid rgb(31, 6, 99);
+  width: 10%;
+  height: 50px;
+}
+
+.btnn {
+  width: 15%;
+  height: 70px;
+  color: white;
+  background-color: rgb(6, 72, 6);
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.btnn:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=auctionsAndPurchases.css.map */

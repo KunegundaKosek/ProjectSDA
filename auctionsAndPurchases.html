@@ -60,6 +60,8 @@
         </form>
 
         <div class="settings">
+            <i class="fa-solid fa-bell"></i>
+
             <a class="settings__icon-link" href="login.html">
                 <i class="fa-solid fa-user"></i>
             </a>
@@ -78,7 +80,7 @@
                 </a>
 
                 <a href="auctionsAndPurchases.html">
-                    <li class="menu__item">Licytacje i zakupy</li>
+                    <li class="menu__item">Licytacje i sprzedaż</li>
                 </a>
 
                 <a href="transactionEvaluation.html">
@@ -92,10 +94,65 @@
             </ul>
         </nav>
 
+        <h1 class="main-articles__intro">
+            <span class="text"></span>
+            <span class="cursor">|</span>
+        </h1>
+        <section class="article-list">
+
+            <article class="article article--small article-list__article">
+
+                <div class="licytacja_sprzedaz">Licytuj</div>
+
+                <div class="sprzedaj">
+                     <br> Nazwa produktu <br> <input class="inputt"  type="text"> <br>
+                     Cena <br> <input class="inputt"  class="cena" type="number" step="0.01">zł <br>
+                    <button class="btnn">Licytuj</button>
+
+
+                </div>
+                <div class="licytacja_sprzedaz">Wystaw produkt na sprzedaż</div>
+
+                <div class="sprzedaj">
+                    Nazwa produktu <br> <input class="inputt"  type="text"> <br>
+                    Opis <br> <input class="inputt"  type="text"> <br>
+                    Cena <br> <input class="cena" type="number" step="0.01">zł <br>
+                    Dodaj zdjęcie <br> <input class="inputt"  type="file"> <br>
+
+                    <button class="btnn">Dodaj</button>
+                   
+
+                </div>
+
+            </article>
+        
+            
+        </section>
+
+        <footer class="footer">
+            <div class="sm-links">
+                <h4 class="sm-links__title">Dowiedz się więcej</h4>
+                <p class="sm-links__item">Linkedin</p>
+                <p class="sm-links__item">GitHub</p>
+                <p class="sm-links__item">Facebook</p>
+                <p class="sm-links__item">YouTube</p>
+            </div>
+            
+            <div class="sm-links sm-links--darken">
+                <h4 class="sm-links__title">Info</h4>
+                <p class="sm-links__item">info</p>
+                <p class="sm-links__item">info</p>
+                <p class="sm-links__item">info</p>
+                <p class="sm-links__item">info</p>
+            </div>
+    
+        </footer>
+
 
 
 
     </div>
+    <script src="animations.js"></script>
 
 </body>
 
